@@ -1,0 +1,7 @@
+/*CSS*/
+.container .text{                             /*you can also use descendant combinator div p or div .text and it would perform the same thing*/
+    background-color: #ffff00;
+    color:#ff0000;
+    font-size: 20px;
+    text-align: center;
+}
