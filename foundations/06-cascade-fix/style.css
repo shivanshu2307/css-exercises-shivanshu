@@ -8,7 +8,7 @@ body {
   font-weight: 800;
 }
 
-.small-para {
+.para.small-para {             /*the specificity way is to put the .small-para after .para so that rule order is applied for both <p> elements, notice how second p element has both the para and small-para classes with same specificity, hence rule order would be applicable*/
   font-size: 14px;
   font-weight: 800;
 }
@@ -17,7 +17,7 @@ body {
   font-size: 22px;
 }
 
-.confirm {
+#confirm-button {              /*ID has more specificity than class but could also use .button.confirm to apply this rule using chaining selectors method or could move the .confirm selector below .button*/
   background: green;
   color: white;
   font-weight: bold;
@@ -29,7 +29,7 @@ body {
   font-size: 20px;
 }
 
-.child {
+.text .child {                 /*creating a descendent combinator using .text class would give more specificity to this rule since there are now two class selectors here compared to one class and one type selector of the div.text selector, another way is to div .child and move the rule below div.text*/
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
